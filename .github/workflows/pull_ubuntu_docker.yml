@@ -28,11 +28,11 @@ jobs:
       # Runs a single command using the runners shell
       - name: Pull image from Docker Hub
         run: |
-          docker pull ubuntu:22.04
+          docker pull ubuntu:20.04
 
       # Runs a set of commands using the runners shell
       - name: Tag and push the Docker image to Aliyun
         run: |
           docker login --username=aliyun2147844044 crpi-2zg9hvsh8g8vjhbv.cn-shenzhen.personal.cr.aliyuncs.com --password=kkkk3327
-          docker tag ubuntu:22.04 crpi-2zg9hvsh8g8vjhbv.cn-shenzhen.personal.cr.aliyuncs.com/kayzee3327/ubuntu:22.04
-          docker push crpi-2zg9hvsh8g8vjhbv.cn-shenzhen.personal.cr.aliyuncs.com/kayzee3327/ubuntu:22.04
+          docker tag ubuntu:20.04 crpi-2zg9hvsh8g8vjhbv.cn-shenzhen.personal.cr.aliyuncs.com/kayzee3327/ubuntu:20.04
+          docker push crpi-2zg9hvsh8g8vjhbv.cn-shenzhen.personal.cr.aliyuncs.com/kayzee3327/ubuntu:20.04
